@@ -4,6 +4,7 @@ import svgr from "vite-plugin-svgr";
 
 // https://vite.dev/config/
 export default defineConfig({
+    base: '/',
     plugins: [
         react(),
         svgr({
@@ -12,4 +13,5 @@ export default defineConfig({
             include: "**/*.svg",
         }),
     ],
+    assetsInclude: ['**/*.svg'],
 })
